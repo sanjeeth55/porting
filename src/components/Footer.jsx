@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-white border-t border-gray-100 pt-0 pb-8 md:pt-0 md:pb-10"
+      className="bg-white border-t border-gray-100 pt-0 pb-0 md:pt-0 md:pb-0 mt-auto"
     >
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[2000px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 mb-16 pt-10 md:pt-16">

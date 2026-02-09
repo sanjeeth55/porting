@@ -39,21 +39,25 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="pt-0 pb-16 md:pt-0 md:pb-24 bg-white">
-      <div className="max-w-6xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[1800px]">
+    <section id="education" className="pt-8 pb-12 md:pt-8 md:pb-12 bg-white">
+      <div className="max-w-6xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[1800px] border-b border-gray-200 pb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16 md:mb-20"
+          className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl xs:text-4xl md:text-5xl font-extrabold text-gray-900">
             My <span className="text-purple-600">Education</span>
           </h2>
         </motion.div>
 
-        <div className="space-y-12 md:space-y-16">
+        <div className="relative">
+          {/* Central Timeline Line - Moved outside to ensure full connection */}
+          <div className="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-gray-200 transform -translate-x-1/2"></div>
+
+          <div className="space-y-8" style={{ '--tw-space-y-reverse': 0, marginTop: 'calc(2rem * calc(1 - var(--tw-space-y-reverse)))' }}>
           {education.map((edu, index) => (
             <motion.div
               key={index}
@@ -63,9 +67,6 @@ const Education = () => {
               transition={{ delay: index * 0.1 }}
               className="relative pl-0 md:pl-0"
             >
-              {/* Timeline Line (Desktop only) */}
-              <div className="hidden md:block absolute left-[50%] top-0 bottom-0 w-px bg-gray-200 transform -translate-x-1/2"></div>
-
               <div
                 className={`flex flex-col md:flex-row items-center justify-between w-full ${
                   index % 2 === 0 ? "md:flex-row-reverse" : ""
@@ -128,6 +129,7 @@ const Education = () => {
               </div>
             </motion.div>
           ))}
+          </div>
         </div>
       </div>
     </section>

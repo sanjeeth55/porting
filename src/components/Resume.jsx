@@ -13,9 +13,9 @@ const Resume = () => {
   return (
     <section
       id="resume"
-      className="pt-8 pb-16 md:pt-8 md:pb-24 bg-gradient-to-br from-blue-50/50 to-purple-50/50"
+      className="pt-8 pb-12 md:pt-8 md:pb-12 bg-white"
     >
-      <div className="max-w-4xl mx-auto px-4 xs:px-6 sm:px-8">
+      <div className="max-w-4xl mx-auto px-4 xs:px-6 sm:px-8 border-b border-gray-200 pb-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

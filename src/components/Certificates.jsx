@@ -25,9 +25,9 @@ const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="pt-0 pb-16 md:pt-0 md:pb-24 bg-gray-50"
+      className="pt-8 pb-12 md:pt-8 md:pb-12 bg-white"
     >
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[1800px]">
+      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[1800px] border-b border-gray-200 pb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

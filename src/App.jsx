@@ -13,19 +13,20 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans overflow-x-hidden">
+    <div className="flex flex-col min-h-screen bg-gray-100 text-gray-900 font-sans overflow-x-hidden">
       <Toaster position="top-right" />
       <Navbar />
-      <Hero />
-      <About />
-      <Resume />
-      {/* Reordered as requested: Experience -> Projects -> Skills */}
-      <Experience />
-      <Projects />
-      <Skills />
-
-      <Education />
-      <Certificates />
+      <div className="flex-grow">
+        <Hero />
+        <About />
+        <Resume />
+        {/* Reordered as requested: Experience -> Projects -> Skills */}
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+        <Certificates />
+      </div>
       <Footer />
     </div>
   );

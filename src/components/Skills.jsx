@@ -73,9 +73,9 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="pt-0 pb-16 md:pt-0 md:pb-24 bg-white relative overflow-hidden"
+      className="pt-8 pb-12 md:pt-8 md:pb-12 bg-white relative overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[2000px]">
+      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[2000px] border-b border-gray-200 pb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

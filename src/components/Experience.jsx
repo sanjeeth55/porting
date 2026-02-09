@@ -6,8 +6,8 @@ const Experience = () => {
   const experiences = [
     {
       role: "Associate Software Engineer",
-      company: "Leapsurge AI",
-      period: "Since Oct 2023 - Apr 2024",
+      company: "Leapsurge Business Innvation",
+      period: "Since Dec 2025 - Present",
       description:
         "Contributing to the development of AI-driven web applications using Django and React.",
       color: "text-orange-500",
@@ -27,7 +27,7 @@ const Experience = () => {
     {
       role: "Social Media Marketing Intern",
       company: "Thistle Media",
-      period: "Feb 2022 - Mar 2022",
+      period: "Oct 2023 - Mar 2024",
       description:
         "Assisted in managing social media campaigns and analyzing engagement metrics to optimize digital marketing strategies.",
       color: "text-green-500",
@@ -37,14 +37,14 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="pt-0 pb-16 md:pt-0 md:pb-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[1800px]">
+    <section id="experience" className="pt-8 pb-12 md:pt-8 md:pb-12 bg-white">
+      <div className="max-w-6xl mx-auto px-4 xs:px-6 sm:px-8 lg:px-10 3xl:max-w-[1800px] border-b border-gray-200 pb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl xs:text-4xl md:text-5xl font-extrabold text-gray-900">
             Work <span className="text-blue-600">Experience</span>
@@ -55,7 +55,7 @@ const Experience = () => {
           {/* Central Timeline Line - Hidden on small mobile to give more space */}
           <div className="hidden md:block absolute left-0 md:left-[50%] top-0 bottom-0 w-px bg-gray-200 transform md:-translate-x-1/2"></div>
 
-          <div className="space-y-12 md:space-y-20">
+          <div className="space-y-8" style={{ '--tw-space-y-reverse': 0, marginTop: 'calc(2rem * calc(1 - var(--tw-space-y-reverse)))' }}>
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
