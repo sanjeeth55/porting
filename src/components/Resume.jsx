@@ -5,7 +5,7 @@ import { FileText, Download, Eye, X } from "lucide-react";
 const Resume = () => {
   // Set the resume file path and filename here (edit manually)
   // Example: "/assets/Sanjeeth_Resume.pdf"
-  const resumeUrl = "/assets/sanjeeth_Kumar_Resume.pdf";
+  const resumeUrl = "D:\\sanjeeth-portfolio\\porting\\src\\assets\\sanjeeth_Kumar_Resume.pdf";
   const fileName = "Sanjeeth_Resume.pdf";
   
   const [showModal, setShowModal] = useState(false);
